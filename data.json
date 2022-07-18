@@ -1,0 +1,71 @@
+{
+    "id": {
+        "pause": ["pause"],
+
+        "sound": ["boom", "bruh", "bong", "\ud83d\udc80", "\ud83d\udc4f", "\ud83d\udc36", "\ud83d\udc7d", "\ud83d\udd14", "\ud83d\udca2",
+                   "\ud83d\udca8", "\ud83d\udeab", "kaching", "slap", "\ud83c\udfcf", "\ud83e\udd2c", "\ud83d\udea8", "buzzer", "e", "eight",
+                   "\ud83c\udf55", "\u2757", "quack", "\ud83e\udda2", "gun", "hitmarker", "\ud83d\udc4c", "\ud83e\udd80", "gnome", "\ud83d\udcbf",
+                   "\ud83c\udf89", "\ud83c\udfbb", "pan", "slip", "whipcrack", "explosion", "\ud83d\udcf2", "\ud83c\udf04", "whatsapp", "suspense",
+                   "airhorn", "augh", "ultrainstinct", "samurai", "flipnote", "nope", "hoenn", "\ud83c\udfba", "oof", "subaluwa", "necoarc", "yoda",
+                   "hehehehaw", "granddad", "morshu", "stopposting", "21", "op", "SLAM", "americano", "smw_coin", "smw_1up", "smw_spinjump", "smw_stomp2",
+                   "smw_kick", "smw_stomp", "yahoo", "sm64_hurt", "bup", "thwomp", "sm64_painting", "smm_scream", "mariopaint_mario", "mariopaint_luigi",
+                   "smw_yoshi", "mariopaint_star", "mariopaint_flower", "mariopaint_gameboy", "mariopaint_dog", "mariopaint_cat", "mariopaint_swan", "mariopaint_baby",
+                   "mariopaint_plane", "mariopaint_car", "shaker", "\ud83e\udd41", "hammer", "\ud83e\ude98", "sidestick", "ride2", "buttonpop", "skipshot",
+                   "otto_on", "otto_off", "otto_happy", "otto_stress", "tab_sounds", "tab_rows", "tab_actions", "tab_decorations", "tab_rooms", "preecho",
+                   "tonk", "rdclap", "rdmistake", "midspin", "adofai_fire", "adofai_ice", "adofaikick", "adofaicymbal", "cowbell", "karateman_throw",
+                   "karateman_offbeat", "karateman_hit", "karateman_bulb", "ook", "choruskid", "builttoscale", "perfectfail", "\ud83c\udf1f", "fnf_left",
+                   "fnf_down", "fnf_up", "fnf_right", "fnf_death", "gdcrash", "gdcrash_orbs", "gd_coin", "gd_orbs", "gd_diamonds", "gd_quit", "bwomp",
+                   "undertale_hit", "undertale_crack", "sans_voice", "megalovania", "\ud83e\uddb4", "undertale_encounter", "toby", "gaster", "lancersplat",
+                   "isaac_hurt", "isaac_dead", "isaac_mantle", "BABA", "YOU", "DEFEAT", "vvvvvv_flip", "vvvvvv_hurt", "vvvvvv_checkpoint", "vvvvvv_flash",
+                   "terraria_star", "terraria_pot", "terraria_reforge", "terraria_guitar", "terraria_axe", "celeste_dash", "celeste_death", "celeste_spring",
+                   "celeste_diamond", "amogus_emergency", "amogus_kill", "amongus", "amongdrip", "amogus", "minecraft_explosion", "minecraft_anvil",
+                   "minecraft_bell", "noteblock_harp", "noteblock_bass", "noteblock_snare", "noteblock_click", "noteblock_bell", "noteblock_banjo",
+                   "noteblock_bit", "noteblock_chime", "noteblock_xylophone", "noteblock_guitar", "noteblock_flute", "noteblock_pling"],
+
+        "action": ["speed", "volume", "stop", "transpose", "loopmany", "loop", "looptarget", "combine", "jump", "target", "cut", "startpos",
+                   "divider", "flash", "pulse", "bg"]
+    },
+        "name": {
+            "pause": ["Silence"],
+
+            "sound": ["Vine Boom", "Bruh", "Bong (Taco Bell)", "Skeleton (Minecraft)", "Reverb Clap (Rhythm Doctor)", "What the dog doin (TonyBakerComedy)",
+                       "Cave sound (Minecraft)", "Bell", "Boink (Rhythm Heaven)", "Reverb Fart", "Error (Windows XP)", "Kaching", "Slap", "Bonk", "Bleep", "Alarm",
+                       "Incorrect Buzzer", "E", "Eight (The Stanley Parable)", "Ayo the pizza here (CalebCity)", "Alert (Metal Gear Solid)", "Quack", "Honk (Untitled Goose Game)",
+                       "Gun Reload", "Hitmarker (Call of Duty)", "Noice Click (Michael Rosen)", "Mr Krabs Walking (Spongebob Squarepants)", "You've been gnomed",
+                       "Record Scratch", "Tada", "Waterphone (The Hell's Kitchen)", "Frying Pan (Scott The Woz)", "Slip", "Whip Crack", "Explosion (DELTARUNE)",
+                       "Skyline Notification (Samsung)", "Morning Flower (Samsung)", "Whistle Notification (Samsung)", "Suspense", "Airhorn", "Pufferfish Augh (YummyBoy)",
+                       "Ultra Instinct (Dragon Ball)", "Samurai Techno (Rhythm Doctor)", "Frog (Flipnote Studio)", "nope.avi (Team Fortress 2)", "Hoenn Trumpet (Pokémon)",
+                       "ZUNpet (Touhou)", "Oof (Roblox)", "Subaluwa (Ed, Edd n Eddy)", "Neco-Arc (Carnival Phantasm)", "Lego Yoda Death (LEGO Star Wars)",
+                       "HE HE HE HAW (Clash Royale)", "GRAND DAD (Vargskelethor Joel)", "Morshu MMMMMMM (Link: The Faces of Evil)", "Ding (bigg*yrappaer)", "21 (DREHYPEMSU)",
+                       "op (Psy)", "SLAM! (Space Jam)", "dog dancing we no speak americano", "Coin (Super Mario World)", "1-Up (Super Mario World)",
+                       "Spin Jump (Super Mario World)", "Stomp (Super Mario World)", "Kick (Super Mario World)", "Boss Stomp (Super Mario World)", "Long Jump (Super Mario 64)",
+                       "Damage (Super Mario 64)", "Bup (Mario Kart 64)", "Thwomp (Super Mario 64)", "Painting (Super Mario 64)", "Scream (Super Mario Maker)",
+                       "Mario (Mario Paint)", "Steel Drum (Super Mario World)", "Yoshi (Mario Paint)", "Star (Mario Paint)", "Flower (Mario Paint)", "Gameboy (Mario Paint)",
+                       "Dog (Mario Paint)", "Cat (Mario Paint)", "Swan (Mario Paint)", "Baby (Mario Paint)", "Plane (Mario Paint)", "Car (Mario Paint)", "Shaker (Rhythm Doctor)",
+                       "Kick (Rhythm Doctor)", "Hammer (Rhythm Doctor)", "Tom Drum (Rhythm Doctor)", "Sidestick (Rhythm Doctor)", "Ride (Rhythm Doctor)", "Pop (Rhythm Doctor)",
+                       "Skipshot (Rhythm Doctor)", "Otto - Enabled (Rhythm Doctor)", "Otto - Disabled (Rhythm Doctor)", "Otto - Happy (Rhythm Doctor)", "Otto - Stress (Rhythm Doctor)",
+                       "Sounds Tab (Rhythm Doctor)", "Rows Tab (Rhythm Doctor)", "Actions Tab (Rhythm Doctor)", "Decorations Tab (Rhythm Doctor)", "Rooms Tab (Rhythm Doctor)",
+                       "Pre-echo Clap (Rhythm Doctor)", "Tonk (Rhythm Doctor)", "Clap Hit (Rhythm Doctor)", "Mistake (Rhythm Doctor)", "Midspin Clack (A Dance Of Fire And Ice)",
+                       "Fire Midspin (A Dance Of Fire And Ice)", "Ice Midspin (A Dance Of Fire And Ice)", "Kick (A Dance Of Fire And Ice)", "Level Complete (A Dance Of Fire And Ice)",
+                       "Cowbell (Rhythm Heaven)", "Karate Man - Toss (Rhythm Heaven)", "Karate Man - Offbeat Toss (Rhythm Heaven)", "Karateman - Hit (Rhythm Heaven)",
+                       "Karate Man - Bulb (Rhythm Heaven)", "Ook (Rhythm Heaven)", "Chorus Kid (Rhythm Heaven)", "Widget (Rhythm Heaven)", "Perfect Failed (Rhythm Heaven)",
+                       "Skill Star (Rhythm Heaven)", "Left (Friday Night Funkin')", "Down Left (Friday Night Funkin')", "Up (Friday Night Funkin')", "Right (Friday Night Funkin')",
+                       "Fail (Friday Night Funkin')", "Crash (Geometry Dash)", "Crash + Orbs (Geometry Dash)", "Secret Coin (Geometry Dash)", "Mana Orbs (Geometry Dash)",
+                       "Diamond (Geometry Dash)", "Quit (Geometry Dash)", "Blast Processing (Geometry Dash)", "Damage (UNDERTALE)", "Game Over (UNDERTALE)", "sans (UNDERTALE)",
+                       "Megalovania (UNDERTALE)", "Megalovania Note (UNDERTALE)", "Encounter (UNDERTALE)", "Bark (UNDERTALE)", "Vanish (UNDERTALE)", "Lancer Splat (DELTARUNE)",
+                       "Damage (Binding of Isaac: Rebirth)", "Death (Binding of Isaac: Rebirth)", "Holy Mantle (Binding of Isaac: Rebirth)", "MOVE (Baba Is You)", "RULE (Baba Is You)",
+                       "DEFEAT (Baba Is You)", "Flip (vvvvvv)", "Sad (vvvvvv)", "Checkpoint (vvvvvv)", "Flash (vvvvvv)", "Magic (Terraria)", "Shatter (Terraria)", "Reforge (Terraria)",
+                       "Stellar Tune (Terraria)", "The Axe (Terraria)", "Dash (Celeste)", "Death (Celeste)", "Spring (Celeste)", "Dash Gem (Celeste)", "Emergency Meeting (Among Us)",
+                       "Kill (Among Us)", "AMONG US", "Among Drip (Leonz)", "Amogus", "Explosion (Minecraft)", "Anvil (Minecraft)", "Bell (Minecraft)", "Note Block - Harp (Minecraft)",
+                       "Note Block - Bass (Minecraft)", "Note Block - Snare (Minecraft)", "Note Block - Hat (Minecraft)", "Note Block - Bell (Minecraft)",
+                       "Note Block - Banjo (Minecraft)", "Note Block - Bit (Minecraft)", "Note Block - Chime (Minecraft)", "Note Block - Xylophone (Minecraft)",
+                       "Note Block - Guitar (Minecraft)", "Note Block - Flute (Minecraft)", "Note Block - Pling (Minecraft)"],
+
+                "action": ["Set tempo", "Set volume", "Pause for duration", "Transpose", "Loop", "Loop once", "Set loop start point", "Combine sounds", "Go to target", "Target",
+                           "Stop all sounds", "Set start position", "Add divider", "Flash screen", "Pulse Screen", "Set background color"]
+        },
+            "args": {
+                "pause": [[0]],
+                "action": [[1, 2], [1, 2], [1], [1], [1], [0], [0], [0], [1], [1], [0], [0], [0], [0], [1], [1]]
+            }
+}

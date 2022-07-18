@@ -1,0 +1,17 @@
+Access to:
+
+IMAGE
+* actions:
+	assets/actions/{id}.png
+* sound:
+	assets/icons/{id}.png
+* empty
+	assets/empty.png
+
+AUDIO
+* sound:
+	audio/{id}.wav
+
+FONT
+
+fonts/{name.ttf}
