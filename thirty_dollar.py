@@ -17,7 +17,6 @@ assert os.path.isdir("data"), "Couldn't reach data"
 # Open the database
 db_file = open("data.json", "r", encoding="utf-8")
 __database__ = json.load(db_file)
-__database__["path"] = os.path.abspath("data")
 db_file.close()
 del db_file
 
@@ -57,11 +56,12 @@ class TDNote:
             try:
                 i, self.count = self.data.split("=")
             except ValueError:
-                if len(self.data.split("=")) > 0:  # too munch durations...
+                if len(self.data.split("=")) > 1:  # too munch durations...
                     raise ValueError("Too munch durations referenced")
 
                 # There is simply one
                 self.count = 1
+                i = self.data
 
             # Removes the prefix
             if self.type != "sound":
@@ -138,13 +138,20 @@ class TDNote:
 
 class TDFile:
     def __init__(self, name: str):
-        self.file = open(name, "w+", encoding="utf-8")
+        self.file = open(name, "r+", encoding="utf-8")
         self.data = self.file.read()
 
         # Sequence parser
         self.raw = self.data.split("|")
 
+        print(f"Loading '{name}'...")
+        i = 1
+        for s in self.raw:
+            print(i, s)
+            __database__["sequence"] = []
+            __database__["sequence"].append(TDNote(s))
+            i += 1
 
-e = TDNote("!speed@6@x=5")
-f = TDNote(["speed", "action", 1])
-print(e.args, e.id)
+
+e = TDFile("sample/Big Shot (DELTARUNE)")
+print(__database__["sequence"])

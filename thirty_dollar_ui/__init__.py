@@ -12,6 +12,8 @@ import pygame
 import thirty_dollar as td
 import loader
 
+loader.init(td.__database__)
+
 
 class TDNoteUI(td.TDNote):
     def __init__(self, name: str or list):
