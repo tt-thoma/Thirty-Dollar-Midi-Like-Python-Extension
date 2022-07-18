@@ -109,10 +109,10 @@ class TDNote:
 
             try:
                 self.args = list(data[3])
-            except ValueError:
+            except IndexError:
                 self.args = []
             except TypeError:
-                raise TypeError(f"Non-iterable object ({type(data[3])}) given instead of an iterable."
+                raise TypeError(f"Non-iterable object ({type(data[3])}) given instead of an iterable. "
                                 "Are you braindead ?")
 
             # Obtain the prefix
@@ -146,5 +146,5 @@ class TDFile:
 
 
 e = TDNote("!speed@6@x=5")
-f = TDNote(["speed", "action", 1, None])
+f = TDNote(["speed", "action", 1])
 print(e.args, e.id)
