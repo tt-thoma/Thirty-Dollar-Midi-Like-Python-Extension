@@ -22,9 +22,7 @@ The UI extension from the thirty dollar program
 
 import pygame
 import thirty_dollar as td
-from . import loader
-
-loader.init(td.__database__)
+from . import ui
 
 
 class TDNoteUI(td.TDNote):
@@ -61,5 +59,5 @@ class TDFileUI(td.TDFile):
             # print(f"Converting... {i + 1}/{len(self.sequence) - 1}")
             self.sequence[i] = TDNoteUI(self.sequence[i])
 
-
-f = TDFileUI("sample/Big Shot (DELTARUNE)")
+def init():
+    ui.init(td.__database__)

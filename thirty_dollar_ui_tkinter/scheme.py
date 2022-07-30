@@ -11,5 +11,7 @@ widget: tk.ttk = tk.ttk
 
 style: widget.Style = widget.Style()
 style.theme_create("light", settings={
-    "att je cherche un truc"
+    "TFrame": {
+        ""
+    }
 })

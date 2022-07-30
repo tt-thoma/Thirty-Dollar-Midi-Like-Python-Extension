@@ -31,3 +31,7 @@ class ProgressBar:
 
         self.size = self.step / self.steps
         self.size = self.size * self.width
+    
+    def step(self):
+        self.increment()
+        self.update()
