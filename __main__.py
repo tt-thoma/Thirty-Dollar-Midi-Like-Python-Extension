@@ -2,7 +2,6 @@
 
 """
 ​
-
 THIRTY DOLLAR MIDI
 ===================
 Import/Exporting tool between MIDI and python, but with more features and a small interface :)
@@ -18,4 +17,6 @@ Inspired by the original scripts
 Go check @GDColon and @Xenon Neko on YouTube!
 """
 
-import thirty_dollar_ui_pygame
+import thirty_dollar_ui_pygame as tdui
+
+tdui.init()
