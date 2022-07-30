@@ -18,4 +18,4 @@ Inspired by the original scripts
 Go check @GDColon and @Xenon Neko on YouTube!
 """
 
-import thirty_dollar
+import thirty_dollar_ui_pygame

@@ -52,7 +52,6 @@ class TDNote:
                 self.type = "sound"
 
             # Detects the count
-            i = None
             try:
                 i, self.count = self.data.split("=")
             except ValueError:
@@ -77,7 +76,7 @@ class TDNote:
             self.name = self.args[0]
 
             # Obtain the id
-            assert self.name in __database__["id"][self.type], f"Invalid name given ({self.name}) for type ({self.type})"
+            assert self.name in __database__["id"][self.type], f"Invalid name given: {self.name} for type: {self.type}"
 
             i = 0
             for i in range(len(__database__["id"][self.type])):
@@ -86,7 +85,7 @@ class TDNote:
 
             self.id = i
 
-            # Test if the arguments have the correct lenght
+            # Test if the arguments have the correct length
             i = len(self.args) - 1
             if self.type == "sound":
                 i_ = [0, 1]
@@ -95,7 +94,7 @@ class TDNote:
             assert i in i_, f"Note {self.name} needed more/less arguments than the {i} given."
 
         elif isinstance(data, list or tuple):
-            # Checking the arguments lenght
+            # Checking the arguments length
             assert 2 < len(data) < 5, f"List needed from 2 to 5 arguments, but {len(data)} were given."
 
             # Parsing the arguments
@@ -112,8 +111,7 @@ class TDNote:
             except IndexError:
                 self.args = []
             except TypeError:
-                raise TypeError(f"Non-iterable object ({type(data[3])}) given instead of an iterable. "
-                                "Are you braindead ?")
+                raise TypeError(f"Non-iterable object ({type(data[3])}) given")
 
             # Obtain the prefix
             if self.type == "action":
@@ -137,21 +135,30 @@ class TDNote:
 
 
 class TDFile:
-    def __init__(self, name: str):
-        self.file = open(name, "r+", encoding="utf-8")
-        self.data = self.file.read()
+    def __init__(self, data: str or list):
+        self.sequence = []
 
-        # Sequence parser
-        self.raw = self.data.split("|")
+        assert type(data) == str or type(data) == list, f"Invalid type given: {type(data)}"
 
-        print(f"Loading '{name}'...")
-        i = 1
-        for s in self.raw:
-            print(i, s)
-            __database__["sequence"] = []
-            __database__["sequence"].append(TDNote(s))
-            i += 1
+        if isinstance(data, str):
+            f = open(data, "r+", encoding="utf-8")
+            d = f.read()
 
+            # Sequence parser
+            raw = d.split("|")
 
-e = TDFile("sample/Big Shot (DELTARUNE)")
-print(__database__["sequence"])
+            print(f"Loading '{data}'...")
+            i = 1
+
+            for s in raw:
+                print(i, s)
+                self.sequence.append(TDNote(s))
+                i += 1
+        elif isinstance(data, list):
+            for note in data:
+                assert type(note) == TDNote or type(note) == str, f"Invalid note type: {type(note)}"
+
+                if isinstance(note, str):
+                    note = TDNote(note)
+
+                self.sequence.append(note)
