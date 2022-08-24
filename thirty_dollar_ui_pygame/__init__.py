@@ -21,8 +21,14 @@ The UI extension from the thirty dollar program
 
 
 import pygame
+import json
 import thirty_dollar as td
 from . import ui
+
+c_file = open("config.json", "r", encoding="utf-8")
+config = json.load(c_file)
+c_file.close()
+del c_file
 
 
 class TDNoteUI(td.TDNote):
@@ -59,5 +65,6 @@ class TDFileUI(td.TDFile):
             # print(f"Converting... {i + 1}/{len(self.sequence) - 1}")
             self.sequence[i] = TDNoteUI(self.sequence[i])
 
+
 def init():
-    ui.init(td.__database__)
+    ui.init(td.__database__, config)

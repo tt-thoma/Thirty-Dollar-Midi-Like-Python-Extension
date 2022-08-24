@@ -16,8 +16,12 @@ pygame.mixer.init()
 # Fonts: ./data/fonts
 
 
-def init(data: dict, on_step: function = lambda pass):
-    # Preparing up the terrain
+def init(data: dict, on_step=None):
+    def _step():
+        if on_step:
+            on_step.__call__()
+
+    # Setting up the terrain
     data["data"] = {}
     data["data"]["image"] = {}
     data["data"]["image"]["action"] = []
@@ -30,7 +34,7 @@ def init(data: dict, on_step: function = lambda pass):
     for t in ["action", "sound"]:
         for a in data["id"][t]:
             data["data"]["image"][t].append(pygame.image.load(f"data/assets/{t}/{a}.png"))
-            on_step.__call__()
+            _step()
             i += 1
     data["data"]["image"]["pause"] = [pygame.image.load("data/assets/empty.png")]
 
@@ -38,7 +42,7 @@ def init(data: dict, on_step: function = lambda pass):
     i = 1
     for s in data["id"]["sound"]:
         data["data"]["audio"].append(pygame.mixer.Sound(f"data/audio/{s}.wav"))
-        on_step.__call__()
+        _step()
         i += 1
 
     print("Done.\n")
