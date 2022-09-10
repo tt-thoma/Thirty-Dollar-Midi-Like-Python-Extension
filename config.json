@@ -2,5 +2,6 @@
     "window": {
         "width": 1080,
         "height": 800
-    }
+    },
+    "FPS": 60
 }

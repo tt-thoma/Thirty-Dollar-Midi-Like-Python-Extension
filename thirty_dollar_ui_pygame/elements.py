@@ -37,9 +37,38 @@ class ProgressBar:
         self.size = self.c_step / self.steps
         self.size = self.size * self.width
 
-        self.fill_rect = pygame.rect.Rect(self.pos, (self.size, self.height))
+        self.fill_rect.update(self.pos, (self.size, self.height))
     
     def step(self):
         self.increment()
         self.calculate()
         self.update()
+
+
+class Text:
+    def __init__(self, x: float, y: float, font: pygame.font.Font or str, surface: pygame.Surface, size: int = None):
+        if isinstance(font, str):
+            assert size, "No size given"
+            self.font = pygame.font.Font(font, size)
+        elif isinstance(font, pygame.font.Font):
+            self.font = font
+        else:
+            raise ValueError(f"Needed a font or an access path, got {type(font)} instead")
+
+        self.pos = (x, y)
+        self.surface = surface
+
+        self.height = self.font.size("a")[1]
+
+    def render(self, text: str, color: tuple, antialias: bool = False):
+        text_lines = text.splitlines()
+        _r = []
+        for line in text_lines:
+            _r.append(self.font.render(line, antialias, color))
+
+        i = 0
+        for r in _r:
+            self.surface.blit(r, (self.pos[0], self.pos[1] + (i * self.height)))
+            i += 1
+
+        del _r
